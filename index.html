@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/cookie.js" async></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Paprika&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <title>Codegiant - Home</title>
+
+    <style>
+        .imgsi {
+            height: 180px;
+            width: 150px;
+            margin: 40px 10px;
+            display: inline-table;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: 'Ubuntu', sans-serif;
+            box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="cicon">
+            <img src="images/nav-logo.png" />
+        </div>
+
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="download.html">Download</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+
+        <h1>Welcome to TournaGround!</h1>
+        <p class="para">Looks like you're truly love to play Online Mobile Games. But, have you ever thought to earn money by playing mobile games? We organise tournaments here every day for you. Join us and play together our favourite game PUBG Mobile or PUBG Mobile
+            Lite. You can join the ongoing tournaments by paying an small entry fee, and make money easily with your wonderful gaming skills.
+        </p>
+
+        <button>Download TournaGround App For Android</button>
+
+        <div class="features">
+            <div class="wit">
+                <h3>Withdraw earnings directly in your</h3>
+                <div class="imgs">
+                    <img src="images/paytm.png" alt="Paytm"> WALLET
+                </div>
+            </div>
+
+            <div class="gam">
+                <h3>Available games on TournaGround</h3>
+                <div class="imgs">
+                    <img src="images/pubg.png" alt="PUBG Mobile"> PUBG Mobile
+                </div>
+                <div class="imgs">
+                    <img src="images/pubg-lite.png" alt="PUBG Mobile Lite"> PUBGM Lite
+                </div>
+            </div>
+            <button>Up Coming Games</button>
+
+            <div class="zes">
+                <h3>Zestful features on TournaGround</h3>
+
+                <ul class="zest">
+                    <li>Win Prizes</li>
+                    <li>Live Streaming</li>
+                    <li>Easy to Use (user friendly)</li>
+                    <li>You can host your own tournaments & earn</li>
+                    <li>Join Tournaments with your lovely friends</li>
+                    <li>You can host your own tournaments & earn</li>
+                    <li>Get rewards directly in your paytm wallet</li>
+                </ul>
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+    <div class="seprator"></div>
+
+    <footer>
+
+        <div class="soc">
+            <h4>Join Us For More Updates</h4>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+        </div>
+
+        &#169; 2020 TournaGround. Powered by <a href="">Codegiant</a>.
+        <div class="footnav">
+            <ul>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Privicy</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/upward-arrow.png" alt=""></button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

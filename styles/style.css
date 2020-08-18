@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: #f4f4f4;
+    font-family: 'Paprika', cursive;
+}
+
+body a {
+    text-decoration: none;
+    color: blue;
+}
+
+header {
+    background: #00234b;
+    width: 100%;
+    position: fixed;
+    height: auto;
+    font-family: 'Red Rose', cursive;
+    top: 0;
+}
+
+.cicon {
+    display: inline-block;
+    margin-left: 3%;
+}
+
+.cicon img {
+    padding-top: 4px;
+    height: 50px;
+    width: 200px;
+}
+
+nav {
+    float: right;
+    margin-right: 3%;
+}
+
+nav ul li {
+    display: inline-flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul li:hover {
+    background: #00000030;
+}
+
+nav ul li a:hover {
+    color: #00ff00;
+}
+
+.active a {
+    color: #0077ff;
+}
+
+section {
+    margin: 100px 50px;
+    text-align: center;
+}
+
+section h1 {
+    letter-spacing: .1em;
+    /* margin-bottom: 0; */
+}
+
+section button {
+    background-color: #3aaa3a;
+    /* border: none; */
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+}
+
+.seprator {
+    background: #909090;
+    height: 1px;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin: 0;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footnav {
+    display: inline;
+}
+
+.footnav ul {
+    padding: 0;
+}
+
+.footnav ul li {
+    display: inline-block;
+    padding: 10px 5px;
+    list-style: none;
+}
+
+.footnav ul li a {
+    text-decoration: none;
+}
+
+
+/* ---------------------------------- */
+
+@media (max-width: 768px) {
+    .cicon {
+        display: none;
+    }
+    header nav {
+        float: none;
+        margin: auto;
+        text-align: center;
+    }
+    header nav ul {
+        padding: 0;
+    }
+    header nav ul li a {
+        padding: 20px;
+    }
+    .para {
+        font-size: 15px;
+        /* margin-top: 20px; */
+    }
+    .zes ul {
+        width: auto;
+    }
+}
+
+
+/* ---------------------------------- */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+/* ---------------------------------- */
+
+.para {
+    /* width: 80%; */
+    margin: 20px auto 30px auto;
+    line-height: 2;
+}
+
+.features img {
+    height: 100px;
+    width: 100px;
+}
+
+.imgs {
+    height: 150px;
+    width: 120px;
+    margin: 40px auto;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+}
+
+.features h3 {
+    letter-spacing: 0.1em;
+}
+
+.features img {
+    margin-top: 20px;
+}
+
+.imgs:hover {
+    box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.295);
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+
+/* ---------------------------------- */
+
+.soc .fab {
+    color: #555555;
+    margin: 5px 5px 15px 5px;
+    font-size: 30px;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-instagram:hover {
+    color: #833AB4
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
+}
+
+
+/* ------------------- */
+
+.zes ul {
+    text-align: left;
+    margin: 20px auto;
+    width: 30%;
+    list-style-type: disclosure-closed;
+}
+
+
+/* -------------------- */
+
+.req {
+    display: inline-block
+}
+
+.req h3 {
+    margin-top: 40px;
+}
+
+.req ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.req ul li {
+    text-align: left;
+}
+
+.dlink {
+    margin: 50px auto 20px auto;
+}
+
+.dlink a {
+    padding: 10px 15px;
+    background: #3aaa3a;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.dlink a:hover {
+    color: #000000;
+}
+
+.dinst {
+    margin-top: 40px;
+}
+
+.dinst a {
+    color: blue;
+}
+
+.ver {
+    font-size: 12px;
+    color: #808080;
+}
+
+
+/* cookie */
+
+.cookieConsentContainer {
+    z-index: 999;
+    width: 350px;
+    min-height: 20px;
+    box-sizing: border-box;
+    padding: 30px 30px 30px 30px;
+    background: #00234b;
+    overflow: hidden;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+}
+
+.cookieConsentContainer .cookieTitle a {
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 20px;
+    display: block;
+}
+
+.cookieConsentContainer .cookieDesc p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 20px;
+    display: block;
+    margin-top: 10px;
+    letter-spacing: 0.05em;
+}
+
+.cookieConsentContainer .cookieDesc a {
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.cookieConsentContainer .cookieButton a {
+    float: right;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    background: #3aaa3a;
+    box-sizing: border-box;
+    padding: 7px 20px 7px 20px;
+    text-align: center;
+    transition: background 0.3s;
+    border-radius: 50px;
+    letter-spacing: 0.05em;
+}
+
+.cookieConsentContainer .cookieButton a:hover {
+    cursor: pointer;
+    color: #000000;
+}
+
+@media (max-width: 425px) {
+    .cookieConsentContainer {
+        bottom: 0px !important;
+        left: 0px !important;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .cookieConsentContainer .cookieButton a {
+        display: flow-root;
+        float: none;
+        width: auto;
+        margin-left: auto;
+    }
+}

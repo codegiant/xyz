@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/cookie.js" async></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Paprika&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        textarea::placeholder {
+            text-align: center;
+        }
+        
+        textarea {
+            padding: 20px;
+            width: 80%;
+        }
+        
+        .questions {
+            text-align: left;
+            display: inline-block;
+        }
+        
+        .ques {
+            height: auto;
+            margin-top: 15px;
+            padding: 5px 50px 5px 50px;
+            box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+            border-radius: 5px;
+            background-color: rgba(128, 128, 128, 0.103);
+        }
+        
+        .ques:hover {
+            box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.295);
+            cursor: pointer;
+            background-color: #fff;
+        }
+        
+        .ques:hover .ans {
+            display: block;
+            opacity: 1;
+            height: auto;
+        }
+        
+        .ans {
+            transition: opacity 1s ease-out;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        @media (min-width: 770px) {
+            .ask #hidee {
+                display: none;
+            }
+        }
+        /* phone */
+        
+        @media (max-width:770px) {
+            .ques {
+                padding: 5px 10px 5px 10px;
+            }
+            .questions {
+                text-align: left;
+                width: 95%;
+                display: inline-block;
+            }
+        }
+    </style>
+
+    <title>Codegiant - FAQs</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="cicon">
+            <img src="images/nav-logo.png" />
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="download.html">Download</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="faq.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+
+        <h2>What's Your Question?</h2>
+        <u>Write below in the box.</u>
+
+        <p style="margin: 20px;"><textarea placeholder="Enter your question here..."></textarea></p>
+
+
+
+        <button>Ask</button>
+
+
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="questions">
+            <div class="ques">
+                <h4>1. How can i get ROOM ID or PASSWORD? <br></h4>
+                <p class="ans">
+                    <span>&#10148;</span> ROOM ID or PASSWORD will be issued on WhatAapp and TournaGround App.
+                </p>
+
+            </div>
+            <div class="ques">
+                <h4>2. What if i paid for tournament and could not join the match?</h4>
+                <p class="ans"><span>&#10148;</span> Check the time and date of the match carefully before joining the match, and join the ROOM 15 minutes before the match starts. <br> If you have joined the match then you should have to play the match.
+                </p>
+            </div>
+            <div class="ques">
+                <h4>3. If the game crashed in the middle of the match?</h4>
+                <p class="ans"><span>&#10148;</span> That match will be counted in fair play.</p>
+            </div>
+            <div class="ques">
+                <h4>4. What to do if someone is cheating in game?</h4>
+                <p class="ans"><span>&#10148;</span> Take a screenshort of that player's profile or name, ID something and send us with your word. <br> (You can directly leave a message anytime on <a href="#" style="color: blue; text-decoration: none;">WhatsApp</a>)
+                    Feel free to contact us. </p>
+            </div>
+            <div class="ques">
+                <h4>5. Where and when will the won money come?</h4>
+                <p class="ans"><span>&#10148;</span> Winning amount will be sent to your Paytm Wallet after 10 minutes of the match.
+                </p>
+            </div>
+            <div class="ques">
+                <h4>6. Provision of refund!</h4>
+                <p class="ans"><span>&#10148;</span> Refunds can be applied 30 minutes before the match starts, once the match starts, your amount will not be refunded.</p>
+            </div>
+            <div class="ques">
+                <h4>7. How can i use my ROOM CARD here?</h4>
+                <p class="ans"><span>&#10148;</span> You have to contact us for using your ROOM CARD on TournaGround.</p>
+            </div>
+        </div>
+        <!-- ----------- -->
+        <!-- ------------------------------------------------------- -->
+        </div>
+        </div>
+
+    </section>
+
+    <div class="seprator"></div>
+
+    <footer>
+
+        &#169; 2020 Codegiant. Powered by <a href="">Codegiant</a>.
+        <div class="footnav">
+            <ul>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Privicy</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/upward-arrow.png" alt=""></button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
